@@ -1,0 +1,17 @@
+<restapis>
+  <restapi>
+	<purpose>用户登录</purpose>
+	<url>/users/login</url>
+	<http-method>post</http-method>
+  </restapi>
+  <restapi>
+	<purpose>用户登出</purpose>
+	<url>/users/logout</url>
+	<http-method>get</http-method>
+  </restapi>
+  <restapi>
+    <purpose>告警信息</purpose>
+    <url>/alerts?status={status}[&amp;start={startTimestamp}&amp;end={endTimestamp}][&amp;severity={severity}][&amp;category={category}][&amp;clusterId={clusterId}][&amp;serviceId={serviceId}][&amp;nodeId={nodeId}]</url>
+    <http-method>get</http-method>
+  </restapi>
+</restapis>
